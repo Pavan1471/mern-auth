@@ -16,13 +16,21 @@ import LoginScreen from './screens/LoginScreen.jsx';
 import RegisterScreen from './screens/RegisterScreen.jsx';
 import ProfileScreen from './screens/ProfileScreen.jsx';
 import PrivateRoute from './components/PrivateRoute.jsx';
-
+import Book from './components/Book.jsx';
+import Admin from './screens/Admin.jsx';
+import Complaint from './components/Complaint.jsx';
+import AdminLogin from './screens/AdminLogin.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
       <Route index={true} path='/' element={<HomeScreen />} />
       <Route path='/login' element={<LoginScreen />} />
       <Route path='/register' element={<RegisterScreen />} />
+      <Route path='/book' element={<Book />} />
+      <Route path='/admin' element={<Admin />} />
+      <Route path='/complaint' element={<Complaint />} />
+      <Route path='/admin/login' element={<AdminLogin />} />
+
       <Route path='' element={<PrivateRoute />}>
         <Route path='/profile' element={<ProfileScreen />} />
       </Route>
