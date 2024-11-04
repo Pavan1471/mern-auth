@@ -19,7 +19,7 @@ const Footer = () => {
                 </p>
             </div>
             <div style={rightsStyle}>
-                <p>&copy; {new Date().getFullYear()} Your Broadband Service. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} City Fibernet. All rights reserved.</p>
             </div>
         </footer>
     );
