@@ -1,14 +1,15 @@
 import Hero from '../components/Hero';
 import { Link, useNavigate } from 'react-router-dom';
+import Footer from './Footer';
+import FAQ from './FAQ';
 const HomeScreen = () => {
   return(
     /* From Uiverse.io by Yaya12085 */ 
 <>
-
-<Link to='/book'>Book Now</Link>
-<br></br>
-<Link to='/complaint'>Complaint Now</Link>
-
+<div className="link-container">
+        <Link to='/book' className="button">Book Now</Link>
+        <Link to='/complaint' className="button">Complaint Now</Link>
+      </div>
 
 <div class="cards-con">
 <div class="plan">
@@ -150,6 +151,10 @@ const HomeScreen = () => {
 
 
 </div>
+<FAQ />
+
+      {/* Footer Section */}
+      <Footer />
 </>
   )
 };
